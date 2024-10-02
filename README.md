@@ -19,7 +19,7 @@ Bienvenido a GuitarLA, una aplicación web donde puedes explorar una colección 
 ## Instalación
 1. Clona este repositorio:
 ```bash
-
+git clone https://github.com/MacarenaCavieres/ecommGuitarTS
 ```
 
 2. Navega al directorio del proyecto:
