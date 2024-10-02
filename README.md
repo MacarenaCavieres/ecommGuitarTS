@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# Tienda de guitarras 🎸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a GuitarLA, una aplicación web donde puedes explorar una colección de guitarras y agregar tus favoritas al carrito de compras. Este proyecto está construido en React y tiene funcionalidades clave como manejo de carrito, ajuste de cantidades de productos, y almacenamiento de estado en localStorage. Para ver el proyecto da click 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
+ - **Listado de Guitarras**: Visualiza una lista de guitarras con imagen, nombre, descripción y precio.
+- **Carrito de Compras**: Agrega guitarras al carrito, ajusta la cantidad de productos y elimínalos si es necesario.
+- **Persistencia en LocalStorage**: El estado del carrito se guarda automáticamente en el navegador para que no se pierda al recargar la página.
+- **Cálculo de Total**: Se calcula automáticamente el total a pagar basado en las cantidades y precios de los productos.
+- **Interfaz Dinámica**: La interfaz se actualiza en tiempo real en función del contenido del carrito.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
+- **React**: Biblioteca principal para la construcción de la interfaz de usuario.
+- **TypeScript**: Lenguaje utilizado para la lógica de la aplicación.
+- **Bootstrap**: Framework CSS para el diseño responsivo y componentes visuales.
+- **LocalStorage**: Para la persistencia de datos del carrito.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
+1. Clona este repositorio:
+```bash
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Navega al directorio del proyecto:
+```bash
+cd guitarla
 ```
+
+3. Instala las dependencias:
+```bash
+npm install
+```
+
+4. Inicia el servidor de desarrollo:
+```bash
+npm start
+```
+
+## Uso
+1. Explora las guitarras disponibles en la página principal.
+2. Haz clic en el botón "Agregar al Carrito" para agregar una guitarra.
+3. Ajusta la cantidad de productos directamente desde el carrito (máximo 5 por producto).
+4. Visualiza el total a pagar, que se calcula automáticamente según los productos agregados.
+5. Vacía el carrito si deseas eliminar todos los productos.
+
+## Desarrollo
+Desarrollado por [MCavieres](https://www.linkedin.com/in/macarena-cavieres-rubio/)
